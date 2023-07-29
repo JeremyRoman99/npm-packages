@@ -1,5 +1,5 @@
 {
-  "name": "@JJROMAN/npm-packages",
+  "name": "@JeremyRoman99/npm-packages",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -9,6 +9,6 @@
   "license": "ISC",
   "description": "",
   "publishConfig": {
-    "@JJROMAN:registry": "https://npm.pkg.github.com"
+    "@JeremyRoman99:registry": "https://npm.pkg.github.com"
   }
 }
