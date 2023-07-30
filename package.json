@@ -1,6 +1,6 @@
 {
   "name": "@jeremyroman99/npm-packages",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JeremyRoman99/npm-packages.git"
+    "url": "git+https://github.com/jeremyroman99/npm-packages.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JeremyRoman99/npm-packages/issues"
+    "url": "https://github.com/jeremyroman99/npm-packages/issues"
   },
-  "homepage": "https://github.com/JeremyRoman99/npm-packages#readme",
+  "homepage": "https://github.com/jeremyroman99/npm-packages#readme",
   "publishConfig": {
-    "@JeremyRoman99:registry": "https://npm.pkg.github.com"
+    "@jeremyroman99:registry": "https://npm.pkg.github.com"
   }
 }
