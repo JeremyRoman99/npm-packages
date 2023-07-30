@@ -1,6 +1,6 @@
 {
   "name": "@jeremyroman99/npm-packages",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jeremyroman99/npm-packages.git"
+    "url": "https://github.com/jeremyroman99/npm-packages.git"
   },
   "author": "",
   "license": "ISC",
