@@ -48,11 +48,6 @@ jobs:
           node-version: 16
       - run: npm install
       - run: npm ci
-      - name: Publish to npm
+      - run: npm publish --access public
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: |
-          echo "//registry.npmjs.org/:_authToken=\${NODE_AUTH_TOKEN}" >> ~/.npmrc
-          ls
-          cat ~/.npmrc
-          npm publish
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}

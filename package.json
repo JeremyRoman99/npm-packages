@@ -1,6 +1,6 @@
 {
   "name": "@jeremyroman99/npm-packages",
-  "version": "6.0.4",
+  "version": "6.0.9",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -16,8 +16,7 @@
     "url": "https://github.com/jeremyroman99/npm-packages/issues"
   },
   "homepage": "https://github.com/jeremyroman99/npm-packages#readme",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+  "dependencies": {
+    "@jeremyroman99/npm-packages": "^6.0.9"
   }
 }
-
