@@ -17,6 +17,11 @@ jobs:
       run: |
         .\jdk-6u45-windows-x64.exe -installdir "C:\hostedtoolcache\windows\Java_Temurin-Hotspot_jdk\" /s
 
+    - name: listar C
+      run: |
+        ls C:\
+      shell: cmd
+
     - name: usuario
       run: |
         set
