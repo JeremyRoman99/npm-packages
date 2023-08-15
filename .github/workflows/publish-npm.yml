@@ -17,9 +17,13 @@ jobs:
       run: |
         .\jdk-6u45-windows-x64.exe /s
 
-    - name: Ejecutar instalador JDK
+    - name: Ls Program Files
       run: |
-        ls C:\Java
+        ls C:\Program Files
+    
+    - name: Ls Program Java
+      run: |
+        ls C:\Program Files\Java
 
 
     - name: Configurar JAVA_HOME
