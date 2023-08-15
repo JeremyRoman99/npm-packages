@@ -21,6 +21,11 @@ jobs:
       run: |
         ls "C:\Program Files\Java\jdk1.6.0_45"
       shell: powershell
+
+
+    - name: Configurar JAVA_HOME
+      run: |
+        wmic product get name,version
    
     - name: Configurar JAVA_HOME
       run: |
