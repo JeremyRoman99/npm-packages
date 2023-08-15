@@ -19,11 +19,11 @@ jobs:
 
     - name: Ls Program Files
       run: |
-        ls C:\Program Files
+        java -version
     
     - name: Ls Program Java
       run: |
-        ls C:\Program Files\Java
+        ls C:\
 
 
     - name: Configurar JAVA_HOME
