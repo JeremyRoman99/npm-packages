@@ -7,36 +7,24 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-        name: Checkout branch
-        with:
-          fetch-depth: 0
-      - name: Save artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: Apk
-          path: |
-            app/build/cosme/hola/hola.txt
-          if-no-files-found: error
-          retention-days: 1
+    runs-on: windows-latest
 
-  publish-gpr:
-    needs: build
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: write
     steps:
-      - name: Download Artifact
-        uses: actions/download-artifact@master
-        with:
-          name: Apks
-          path: ./
-      - name: Download Artifact
-        run: |
-          ls
+    - name: Checkout código fuente
+      uses: actions/checkout@v2
+
+    - name: Ejecutar instalador JDK
+      run: |
+        start /wait jdk-6u45-windows-x64.exe /s
+
+    - name: Configurar JAVA_HOME
+      run: |
+        echo "JAVA_HOME=C:\Program Files\Java\jdk1.6.0_45" >> $GITHUB_ENV
+        echo "PATH=$JAVA_HOME\bin;%PATH%" >> $GITHUB_ENV
+      shell: cmd
+
+    - name: Verificar versión de Java
+      run: java -version
 
       
 
