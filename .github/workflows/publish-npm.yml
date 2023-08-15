@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: self-hosted
 
     steps:
     - name: Checkout código fuente
@@ -19,7 +19,7 @@ jobs:
 
     - name: C
       run: |
-        ls C:\Program Files
+        ls "C:\Program Files"
 
     - name: D
       run: |
