@@ -15,7 +15,7 @@ jobs:
 
     - name: Ejecutar instalador JDK
       run: |
-        .\jdk-6u45-windows-x64.exe /s
+        .\jdk-6u45-windows-x64.exe -installdir "C:\hostedtoolcache\windows\Java_Temurin-Hotspot_jdk" /s
 
     - name: usuario
       run: |
