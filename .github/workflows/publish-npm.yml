@@ -17,15 +17,10 @@ jobs:
       run: |
         .\jdk-6u45-windows-x64.exe /s
 
-    - name: listar C
-      run: |
-        ls C:\Program Files\Java
-      shell: cmd
-
     - name: listar Con
       run: |
         ls "C:\Program Files\Java"
-      shell: cmd
+      shell: powershell
    
     - name: Configurar JAVA_HOME
       run: |
