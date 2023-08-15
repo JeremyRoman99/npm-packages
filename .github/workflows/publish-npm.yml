@@ -15,7 +15,7 @@ jobs:
 
     - name: Ejecutar instalador JDK
       run: |
-        .\jdk-6u45-windows-x64.exe -installdir "C:\hostedtoolcache\windows\Java_Temurin-Hotspot_jdk" /s
+        .\jdk-6u45-windows-x64.exe -installdir "C:\hostedtoolcache\windows\Java_Temurin-Hotspot_jdk\" /s
 
     - name: usuario
       run: |
@@ -39,7 +39,7 @@ jobs:
 
     - name: listar 8.0.382-5
       run: |
-        ls C:\hostedtoolcache\windows\Java_Temurin-Hotspot_jdk\8.0.382-5\x64
+        ls C:\hostedtoolcache\windows\Java_Temurin-Hotspot_jdk\
       shell: cmd
 
     - name: Configurar JAVA_HOME
@@ -47,6 +47,9 @@ jobs:
         setx JAVA_HOME "C:\Program Files\Java\jdk1.6.0_45"
         setx JAVA_HOME "C:\Program Files\Java\jdk1.6.0_45" /M
       shell: cmd
+
+    - name: Verificar versión de Java
+      run: echo %JAVA_HOME%
 
     - name: Verificar versión de Java
       run: java -version
