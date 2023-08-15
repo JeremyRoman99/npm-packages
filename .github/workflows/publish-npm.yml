@@ -19,22 +19,13 @@ jobs:
 
     - name: listar Con
       run: |
-        ls "C:\Program Files\Java"
+        ls "C:\Program Files\Java\jdk1.6.0_45"
       shell: powershell
    
     - name: Configurar JAVA_HOME
       run: |
         setx JAVA_HOME "C:\Program Files\Java\jdk1.6.0_45"
         setx JAVA_HOME "C:\Program Files\Java\jdk1.6.0_45" /M
-      shell: powershell
-
-    - name: PATH
-      run: |
-        echo "${{ env.PATH}}"
-      shell: powershell
-    - name: JAVA_HOME
-      run: |
-        echo "${{ env.JAVA_HOME}}"
       shell: powershell
 
     - name: Verificar versión de Java
