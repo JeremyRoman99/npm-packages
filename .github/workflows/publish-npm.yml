@@ -19,11 +19,16 @@ jobs:
 
     - name: Ls Program Files
       run: |
-        java -version
+        where java
+        echo %JAVA_HOME%
     
-    - name: Ls Program Java
+    - name: C
       run: |
         ls C:\
+
+    - name: D
+      run: |
+        ls D:\
 
 
     - name: Configurar JAVA_HOME
