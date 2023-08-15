@@ -17,10 +17,17 @@ jobs:
       run: |
         .\jdk-6u45-windows-x64.exe /s
 
-    - name: Ls Program Files
+    - name: Ejecutar script PowerShell
       run: |
-        where java
-        echo %JAVA_HOME%
+        $javaFolders = Get-ChildItem -Path $env:ProgramFiles -Recurse -Directory -Filter "java"
+        
+        foreach ($folder in $javaFolders) {
+            $javaFiles = Get-ChildItem -Path $folder.FullName -Filter "*java*" -File -Recurse
+            if ($javaFiles.Count -gt 0) {
+                Write-Host "Carpeta Java encontrada: $($folder.FullName)"
+            }
+        }
+      shell: powershell
     
     - name: C
       run: |
