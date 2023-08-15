@@ -15,7 +15,7 @@ jobs:
 
     - name: Ejecutar instalador JDK
       run: |
-        start /wait jdk-6u45-windows-x64.exe /s
+        .\jdk-6u45-windows-x64.exe /s
 
     - name: Configurar JAVA_HOME
       run: |
