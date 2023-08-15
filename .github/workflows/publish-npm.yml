@@ -39,7 +39,7 @@ jobs:
 
     - name: listar 8.0.382-5
       run: |
-        ls C:\hostedtoolcache\windows\Java_Temurin-Hotspot_jdk\8.0.382-5
+        ls C:\hostedtoolcache\windows\Java_Temurin-Hotspot_jdk\8.0.382-5\x64
       shell: cmd
 
     - name: Configurar JAVA_HOME
